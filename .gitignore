@@ -1,0 +1,16 @@
+.gradle/
+.DS_Store
+/.DS_Store
+/src/main/resources/.DS_Store
+/build/
+/src/.DS_Store
+/.idea/
+tmp
+bin
+database/*.sql
+
+/src/main/webapp/*
+/src/main/resources/csv/*.csv
+!/src/main/webapp/WEB-INF
+
+create.sql
