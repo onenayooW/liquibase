@@ -1,0 +1,4 @@
+create table ssdictionary (id bigint not null auto_increment, created_at datetime, deleted_at datetime, sorting_order bigint, edited_at datetime, updated_at datetime, version bigint, direct_intent json, name varchar(255), popularity bigint not null, ranking bigint not null, search_input json, synnonyms json, primary key (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE utf8mb4_general_ci;
+create table ssintent (dtype varchar(31) not null, id bigint not null auto_increment, created_at datetime, deleted_at datetime, sorting_order bigint, edited_at datetime, updated_at datetime, version bigint, description varchar(255), name varchar(255) not null, ranking bigint, target varchar(255) not null, primary key (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE utf8mb4_general_ci;
+alter table ssdictionary add constraint IDX_SSDICTIONARY_NAME unique (name);
+alter table ssintent add constraint IDX_SSINTENT_NAME unique (name);

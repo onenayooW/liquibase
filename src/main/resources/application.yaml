@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/t2h_liquibase?useUnicode=yes&characterEncoding=UTF-8
+    username: t2h_liquibase
+    password: t2h_liquibase
+  jpa:
+    properties:
+      javax:
+        persistence:
+          schema-generation: # Open this line only when you want to create migration sql
+            create-source: metadata # Open this line only when you want to create migration sql
+            scripts: # Open this line only when you want to create migration sql
+              action: update # create or update Open this line only when you want to create migration sql
+              create-target: create.sql # Open this line only when you want to create migration sql

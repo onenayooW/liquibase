@@ -1,0 +1,1 @@
+alter table ktcategory add column blog_slug varchar(1024);

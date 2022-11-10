@@ -1,0 +1,8 @@
+### format generateChangelog ###
+url=jdbc:mysql://localhost:3306/t2h_liquibase?useJvmCharsetConverters=true&useUnicode=yes&characterEncoding=UTF-8
+username=t2h_liquibase
+password=t2h_liquibase
+driver=com.mysql.jdbc.Driver
+changeLogFile=src/main/resources/db/changelog/db.changelog-master.xml
+
+
